@@ -19,8 +19,6 @@ public class Localization implements Command {
         HttpSession session = request.getSession(true);
         session.setAttribute(RequestParameterName.LANGUAGE,request.getParameter(RequestParameterName.LANGUAGE));
         String uri = request.getParameter(RequestParameterName.PAGE);
-        System.out.println("page from pagehelper - " + PageHelper.preparePage(uri));
-        //System.out.println("pageName - " + pageName);
         String preparedPage = JspPageName.getPage(PageHelper.preparePage(uri));
         System.out.println("prepared page - " + preparedPage);
         return preparedPage;

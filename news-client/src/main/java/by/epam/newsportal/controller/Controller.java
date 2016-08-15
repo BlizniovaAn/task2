@@ -30,7 +30,7 @@ public final class Controller extends HttpServlet{
     }
 
     private static void doRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-       /* Command command = CommandHelper.getInstance().getCommand(request.getParameter(RequestParameterName.COMMAND));
+        Command command = CommandHelper.getInstance().getCommand(request.getParameter(RequestParameterName.COMMAND));
         String page = null;
         try {
             page = command.execute(request, response);
@@ -38,8 +38,8 @@ public final class Controller extends HttpServlet{
             page = JspPageName.TECHNICAL_ERROR_PAGE;
         }catch (Exception e){
             page = JspPageName.TECHNICAL_ERROR_PAGE;
-        }*/
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.tiles");
+        }
+        RequestDispatcher dispatcher = request.getRequestDispatcher(page);
         if(dispatcher != null){
             dispatcher.forward(request, response);
         }

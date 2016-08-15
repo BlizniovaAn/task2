@@ -13,6 +13,13 @@ li {
     margin-left: 8px;
 }
 
+select {
+    margin-right: 10px;
+}
+
+button {
+    margin-right: 5px;
+}
 /*classes for localization links*/
 .active {
     color:red;
@@ -67,4 +74,13 @@ footer{
     margin-bottom: 26px;
     border:1px dotted black;
     padding-bottom: 4px;
+}
+
+.drownboxes{
+    display: inline-block;
+    margin-left: 50%;
+    padding: 2%;
+}
+.pagination{
+
 }
