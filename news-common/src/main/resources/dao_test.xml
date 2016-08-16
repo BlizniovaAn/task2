@@ -16,6 +16,14 @@
             </list>
         </property>
     </bean>
+    <context:annotation-config/>
+    <context:component-scan base-package="by.epam.newsportal.dao"/>
+    <tx:annotation-driven transaction-manager="txManager"/>
+
+    <!--TRANSACTION MANAGER -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="springDataSource"/>
+    </bean>
 
     <!--DATASOURCES -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
