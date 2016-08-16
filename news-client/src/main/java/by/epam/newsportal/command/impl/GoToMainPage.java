@@ -3,16 +3,6 @@ package by.epam.newsportal.command.impl;
 import by.epam.newsportal.command.Command;
 import by.epam.newsportal.command.CommandException;
 import by.epam.newsportal.controller.JspPageName;
-import by.epam.newsportal.controller.RequestParameterName;
-import by.epam.newsportal.entity.Author;
-import by.epam.newsportal.entity.Tag;
-import by.epam.newsportal.service.AuthorService;
-import by.epam.newsportal.service.NewsPieceService;
-import by.epam.newsportal.service.ServiceException;
-import by.epam.newsportal.service.TagService;
-import by.epam.newsportal.service.impl.AuthorServiceImpl;
-import by.epam.newsportal.service.impl.NewsPieceServiceImpl;
-import by.epam.newsportal.service.impl.TagServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
