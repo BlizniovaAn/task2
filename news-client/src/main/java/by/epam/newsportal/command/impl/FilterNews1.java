@@ -28,20 +28,12 @@ public class FilterNews1 implements Command {
 
     private ApplicationContext appContext;
 
-    static {
-        System.out.println("in clinit");
-    }
-
-    public FilterNews1(){
-        System.out.println("in constr");
-    }
-
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandException {
         NewsPieceService service = (NewsPieceServiceImpl)appContext.getBean("NewsPieceServiceImpl");
-        Author author = getAuthor(Long.valueOf(request.getParameter("authorId")));
-        List<Tag> tags = getTags(request.getParameter("tagsId"));
-        SearchCriteria criteria = new SearchCriteria(author,tags);
+        /*Author author = getAuthor(Long.valueOf(request.getParameter("authorId")));
+        List<Tag> tags = getTags(request.getParameter("tagsId"));*/
+       // SearchCriteria criteria = new SearchCriteria(author,tags);
         List<NewsPiece> news;
         try {
             news = service.selectAll();
@@ -62,7 +54,7 @@ public class FilterNews1 implements Command {
    /* */
         return null;
     }
-    private Author getAuthor(Long id){
+   /* private Author getAuthor(Long id){
         Author author = new Author();
         author.setAuthorId(id);
         return author;
@@ -79,5 +71,5 @@ public class FilterNews1 implements Command {
             tags.add(curTag);
         }
         return tags;
-    }
+    }*/
 }

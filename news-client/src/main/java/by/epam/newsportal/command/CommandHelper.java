@@ -17,15 +17,10 @@ public class CommandHelper {
         commands.put(CommandName.GO_TO,new GoTo());
         System.out.println("sdrfjd1");
         commands.put(CommandName.LOCALIZATION,new Localization());
-        System.out.println("sdrfjd2");
-        FilterNews1 fn = new FilterNews1();
-        System.out.println("sdrfjd3");
-        commands.put(CommandName.FILTER_NEWS,fn);
         System.out.println("sdrfjd4");
         //commands.put(CommandName.GO_TO_MAIN_PAGE,new GoToMainPage());
     }
     public static CommandHelper getInstance(){
-        System.out.println("sdrfjd");
         return instance;
     }
 
