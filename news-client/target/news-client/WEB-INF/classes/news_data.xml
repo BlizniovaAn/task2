@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <NEWS NEWS_ID="1" TITLE="Muhammad Ali"
+          SHORT_TEXT="Muhammad Ali, a sports figure and three-time world heavyweight boxing champion, died on Friday."
+          FULL_TEXT="Muhammad Ali, a pioneering sports figure and three-time world heavyweight boxing champion, died on Friday at age 74.
+          His accomplishments and fame outside the ring rivaled his achievements within it: his charisma, his religious and political stances"
+          CREATION_DATE="2016-06-06 08:42:16"
+          MODIFICATION_DATE="2016-06-06"/>
+    <NEWS NEWS_ID="2" TITLE="Could Judge Be Trump Neutral?"
+          SHORT_TEXT="Donald J. Trump’s remarks that a Muslim judge might have trouble remaining neutral."
+          FULL_TEXT="Donald J. Trump said Sunday that a Muslim judge might have trouble remaining neutral in a lawsuit against him,
+          extending his race-based criticism of the jurist overseeing the case to include religion."
+          CREATION_DATE="2016-06-01 08:49:16"
+          MODIFICATION_DATE="2016-06-01"/>
+    <NEWS NEWS_ID="3" TITLE="A Weekend in Chicago"
+          SHORT_TEXT="By the time Memorial Day weekend was over in Chicago, 64 people had been shot, six fatally."
+          FULL_TEXT="The New York Times visited scores of shooting scenes to capture what is happening on the streets — and why.
+          “Shooting in Chicago is like a cancer,” says Charles Parker, 46, “It’s starting to spread out, and I just figured it was a matter of time.”"
+          CREATION_DATE="2016-05-05 13:12:45"
+          MODIFICATION_DATE="2016-05-06"/>
+
+    <COMMENTS COMMENT_ID="1" COMMENT_TEXT="After him, blackness as a point of public pride had also drifted away from American  culture..."
+              CREATION_DATE="2016-06-06 20:10:00"
+              NEWS_ID="1"/>
+    <COMMENTS COMMENT_ID="2" COMMENT_TEXT="These are hardly boring times."
+              CREATION_DATE="2016-06-01 12:34:00"
+              NEWS_ID="2"/>
+    <COMMENTS COMMENT_ID="3" COMMENT_TEXT="Muhammad Ali, words like “radical,” “truth,” “fame,” and “risk”"
+              CREATION_DATE="2016-06-06 16:18:12"
+              NEWS_ID="1"/>
+    <COMMENTS COMMENT_ID="4" COMMENT_TEXT="Some of what’s happened in this period has been rightly received as radical"
+              CREATION_DATE="2016-05-07 20:19:00"
+              NEWS_ID="2"/>
+    <COMMENTS COMMENT_ID="5" COMMENT_TEXT="Ohhh.."
+              CREATION_DATE="2016-06-06 22:01:00"
+              NEWS_ID="1"/>
+
+    <AUTHOR AUTHOR_ID="1" AUTHOR_NAME="Anna" EXPIRED="2016-03-05 08:49:16"/>
+    <AUTHOR AUTHOR_ID="2" AUTHOR_NAME="Maria"/>
+    <AUTHOR AUTHOR_ID="3" AUTHOR_NAME="Olga" />
+    <AUTHOR AUTHOR_ID="4" AUTHOR_NAME="Oleg" EXPIRED="2016-04-15 08:49:16"/>
+    <AUTHOR AUTHOR_ID="5" AUTHOR_NAME="Pavel" EXPIRED="2016-04-15 08:49:16"/>
+
+    <TAG TAG_ID="1" TAG_NAME="sport"/>
+    <TAG TAG_ID="2" TAG_NAME="policy"/>
+    <TAG TAG_ID="3" TAG_NAME="terrorism"/>
+    <TAG TAG_ID="4" TAG_NAME="people"/>
+
+    <NEWS_AUTHOR NEWS_ID="1" AUTHOR_ID="3"/>
+    <NEWS_AUTHOR NEWS_ID="2" AUTHOR_ID="1"/>
+    <NEWS_AUTHOR NEWS_ID="3" AUTHOR_ID="2"/>
+    <NEWS_AUTHOR NEWS_ID="3" AUTHOR_ID="4"/>
+    <NEWS_AUTHOR NEWS_ID="3" AUTHOR_ID="5"/>
+
+    <NEWS_TAG NEWS_ID="1" TAG_ID="1"/>
+    <NEWS_TAG NEWS_ID="1" TAG_ID="4"/>
+    <NEWS_TAG NEWS_ID="2" TAG_ID="2"/>
+    <NEWS_TAG NEWS_ID="2" TAG_ID="3"/>
+    <NEWS_TAG NEWS_ID="3" TAG_ID="3"/>
+</dataset>
