@@ -3,7 +3,6 @@ package by.epam.newsportal.controller;
 import by.epam.newsportal.command.Command;
 import by.epam.newsportal.command.CommandException;
 import by.epam.newsportal.command.CommandHelper;
-import by.epam.newsportal.command.impl.FilterNews1;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,9 +30,8 @@ public final class Controller extends HttpServlet{
     }
 
     private static void doRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        //FilterNews1 fn = new FilterNews1();
+
         CommandHelper ch = CommandHelper.getInstance();
-      //  Command command = CommandHelper.getInstance();
         String command = request.getParameter(RequestParameterName.COMMAND);
         Command command1 = ch.getCommand(command);
         String page = null;
