@@ -25,6 +25,7 @@
         <property name="username" value="${username}" />
         <property name="password" value="${password}" />
         <property name="defaultAutoCommit" value="false"/>
+
     </bean>
 
     <!--DAO -->

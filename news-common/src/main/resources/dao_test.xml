@@ -36,8 +36,6 @@
           class="com.github.springtestdbunit.bean.DatabaseDataSourceConnectionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="databaseConfig" ref="dbUnitDatabaseConfig"/>
-
-        <!--<property name="schema" value="TEST_DB"/>-->
         <property name="schema" value="NEW_USER"/>
     </bean>
 
