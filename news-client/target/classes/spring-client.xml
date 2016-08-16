@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <import resource="classpath*:spring.xml" />
+
+    <bean id="pageHelper" class="by.epam.newsportal.command.PageHelper"></bean>
+    <bean id="commandHelper" class="by.epam.newsportal.command.CommandHelper"></bean>
+    <bean id="localizationCommand" class="by.epam.newsportal.command.impl.Localization"></bean>
+    <bean id="jspPageName" class="by.epam.newsportal.controller.JspPageName"></bean>
+    <bean id="requestParameterName" class="by.epam.newsportal.controller.RequestParameterName"></bean>
+    <bean id="controller" class="by.epam.newsportal.controller.Controller"></bean>
+
+</beans>
