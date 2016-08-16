@@ -30,16 +30,16 @@ public class FilterNews1 implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandException {
-        NewsPieceService service = (NewsPieceServiceImpl)appContext.getBean("NewsPieceServiceImpl");
+       // NewsPieceService service = (NewsPieceServiceImpl)appContext.getBean("NewsPieceServiceImpl");
         /*Author author = getAuthor(Long.valueOf(request.getParameter("authorId")));
         List<Tag> tags = getTags(request.getParameter("tagsId"));*/
        // SearchCriteria criteria = new SearchCriteria(author,tags);
         List<NewsPiece> news;
-        try {
+      /*  try {
             news = service.selectAll();
         } catch (ServiceException e) {
             e.printStackTrace();
-        }
+        }*/
         /*try {
             news = service.search(criteria);
         } catch (ServiceException e) {
