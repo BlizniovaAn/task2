@@ -14,21 +14,6 @@
         <module>news-client</module>
     </modules>
 
-    <build>
-        <finalName>mvn-webapp-test</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.0.2</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
     <properties>
         <log4j>1.2.17</log4j>
         <spring.ver>4.2.6.RELEASE</spring.ver>
