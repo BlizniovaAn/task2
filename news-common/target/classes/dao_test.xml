@@ -29,8 +29,8 @@
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
         <property name="driverClassName" value="${driverClassName}" />
         <property name="url" value="${url}" />
-        <property name="username" value="${username}" />
-        <property name="password" value="${password}" />
+        <property name="username" value="TEST_DB" />
+        <property name="password" value="testdb" />
     </bean>
 
     <bean id="dbUnitDatabaseConfig" class="com.github.springtestdbunit.bean.DatabaseConfigBean">
@@ -44,7 +44,7 @@
           class="com.github.springtestdbunit.bean.DatabaseDataSourceConnectionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="databaseConfig" ref="dbUnitDatabaseConfig"/>
-        <property name="schema" value="NEW_USER"/>
+        <property name="schema" value="TEST_DB"/>
     </bean>
 
     <!--DAO -->

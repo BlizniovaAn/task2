@@ -10,6 +10,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <artifactId>news-client</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -60,12 +72,7 @@
             <version>${jstl}</version>
         </dependency>
 
-        <!-- LOGGER -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.5</version>
-        </dependency>
+
 
         <dependency>
             <groupId>by.epam.newsportal</groupId>

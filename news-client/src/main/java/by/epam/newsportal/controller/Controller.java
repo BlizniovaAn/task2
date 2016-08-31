@@ -3,8 +3,10 @@ package by.epam.newsportal.controller;
 import by.epam.newsportal.command.Command;
 import by.epam.newsportal.command.CommandException;
 import by.epam.newsportal.command.CommandHelper;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,13 +32,12 @@ public final class Controller extends HttpServlet{
     }
 
     private static void doRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-
-        CommandHelper ch = CommandHelper.getInstance();
-        String command = request.getParameter(RequestParameterName.COMMAND);
-        Command command1 = ch.getCommand(command);
+        String str = request.getParameter(RequestParameterName.COMMAND);
+        System.out.println(str);
+        Command command = CommandHelper.getInstance().getCommand(request.getParameter(RequestParameterName.COMMAND));
         String page = null;
         try {
-            page = command1.execute(request, response);
+            page = command.execute(request, response);
         } catch (CommandException ex){
             page = JspPageName.TECHNICAL_ERROR_PAGE;
         }catch (Exception e){

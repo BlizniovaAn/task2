@@ -10,4 +10,5 @@ public enum CommandName {
     SHOW_PIECE_NEWS,
     FILTER_NEWS,
     GO_TO_MAIN_PAGE,
+    GO_TO_CURRENT_NEWS
 }

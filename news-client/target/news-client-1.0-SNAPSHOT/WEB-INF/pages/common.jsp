@@ -10,7 +10,8 @@
 <html>
 <head>
     <title>${title}</title>
-    <script src="${pageContext.request.contextPath}/scripts/news.js"></script>
+    <!--<script src="${pageContext.request.contextPath}/scripts/common.js"></script>
+    <script src="${pageContext.request.contextPath}/scripts/news.js"></script> -->
     <script src="${pageContext.request.contextPath}/scripts/link.js"></script>
     <link href="${pageContext.request.contextPath}/styles/styles.css" rel="stylesheet" />
 </head>
@@ -20,6 +21,7 @@
     <div class="content">
         <tiles:insertAttribute name="body" />
     </div>
+    <tiles:insertAttribute name="pagination" />
     <tiles:insertAttribute name="footer" />
 </div>
 </body>

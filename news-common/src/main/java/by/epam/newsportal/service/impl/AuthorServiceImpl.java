@@ -6,6 +6,8 @@ import by.epam.newsportal.entity.Author;
 import by.epam.newsportal.entity.NewsPiece;
 import by.epam.newsportal.service.AuthorService;
 import by.epam.newsportal.service.ServiceException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -71,7 +73,13 @@ public class AuthorServiceImpl implements AuthorService {
         return null;
     }
     public List<Author> selectAll() throws ServiceException {
-        return null;
+        List<Author> authors;
+        try {
+            authors = authorDao.selectAll();
+        } catch (DaoException e) {
+            throw new ServiceException("AuthorServiceImpl Exception", e);
+        }
+        return authors;
     }
 
 }

@@ -10,5 +10,11 @@
     <definition name="index" extends="common">
         <put-attribute name="header" value="/WEB-INF/templates/header/header.jsp" />
         <put-attribute name="body" value="/WEB-INF/templates/body/index-body.jsp" />
+        <put-attribute name="pagination" value="/WEB-INF/templates/pagination-block.jsp" />
+    </definition>
+    <definition name="current-news" extends="common">
+        <put-attribute name="header" value="/WEB-INF/templates/header/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/templates/body/current-news-body.jsp" />
+        <put-attribute name="pagination" value="" />
     </definition>
 </tiles-definitions>

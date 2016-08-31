@@ -116,7 +116,13 @@ public class TagServiceImpl implements TagService{
     }
 
     public List<Tag> selectAll() throws ServiceException {
-        return null;
+        List<Tag> tags = null;
+        try {
+            tags = tagDao.selectAll();
+        } catch (DaoException e) {
+            throw new ServiceException("TagServiceImpl Exception",e);
+        }
+        return tags;
     }
 
 }

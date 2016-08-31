@@ -1,7 +1,6 @@
 package by.epam.newsportal.command;
 
-import by.epam.newsportal.command.impl.GoTo;
-import by.epam.newsportal.command.impl.Localization;
+import by.epam.newsportal.command.impl.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,15 +14,16 @@ public class CommandHelper {
     private CommandHelper(){
         commands.put(CommandName.GO_TO,new GoTo());
         commands.put(CommandName.LOCALIZATION,new Localization());
+        commands.put(CommandName.FILTER_NEWS,new FilterNews());
+        commands.put(CommandName.GO_TO_MAIN_PAGE,new GoToMainPage());
+        commands.put(CommandName.GO_TO_CURRENT_NEWS,new GoToCurrentNews());
     }
     public static CommandHelper getInstance(){
         return instance;
     }
 
     public Command getCommand(String commandName){
-        String trimmed = commandName.toUpperCase().trim();
-        System.out.println("getCommand: " + trimmed);
-        CommandName name = CommandName.valueOf(trimmed);
+        CommandName name = CommandName.valueOf(commandName.toUpperCase().trim());
         Command command;
         if(name != null){
             command = commands.get(name);

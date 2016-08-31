@@ -13,4 +13,5 @@ public final class RequestParameterName {
     public static final String NEWS_LIST = "newsList";
     public static final String AUTHORS = "authors";
     public static final String TAGS = "tags";
+    public static final String NEWS_PIECE = "newsPiece";
 }

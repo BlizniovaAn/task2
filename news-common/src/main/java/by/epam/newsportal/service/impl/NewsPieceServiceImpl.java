@@ -110,7 +110,10 @@ public class NewsPieceServiceImpl implements NewsPieceService {
         Author author = searchCriteria.getAuthor();
         List<Tag> tags = searchCriteria.getTags();
         try {
-            if(author == null && !tags.isEmpty()){
+            if(author == null && tags == null){
+                return newsDao.selectAll();
+            }
+            else if(author == null && !tags.isEmpty()){
                 return newsDao.find(searchCriteria.getAuthor(), tags);
             }else if(author != null){
                 return newsDao.find(author);
@@ -142,13 +145,10 @@ public class NewsPieceServiceImpl implements NewsPieceService {
         return news;
     }
 
-    public NewsPiece select(NewsPiece object) throws ServiceException {
+    public NewsPiece select(NewsPiece news) throws ServiceException {
         NewsPiece newsPiece = null;
-        List<Comment> comments = null;
-        Set<Tag> tags = null;
-        Set<Author> authors = null;
         try {
-            newsPiece = newsDao.select(object);
+            newsPiece = newsDao.select(news);
         } catch (DaoException e) {
             throw new ServiceException("NewsPieceServiceImpl Exception", e);
         }

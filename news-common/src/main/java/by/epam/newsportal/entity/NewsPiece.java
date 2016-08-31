@@ -12,6 +12,7 @@ public class NewsPiece {
     public static final String TITLE = "title";
     public static final String SHORT_TEXT = "s_text";
     public static final String FULL_TEXT = "f_text";
+    public static final Long COMMENTS_COUNT = 0L;
     public static final Long ID = 1L;
 
     private Long newsId;
@@ -23,10 +24,11 @@ public class NewsPiece {
     private Set<Author> authors;
     private Set<Tag> tags;
     private List<Comment> comments;
+    private Long commentCount;
 
     public NewsPiece(Long newsId, String title, String shortText, String fullText,
                      Date creationDate, Date modificationDate, Set<Author> authors,
-                     Set<Tag> tags,List<Comment> comments) {
+                     Set<Tag> tags, List<Comment> comments) {
         this.newsId = newsId;
         this.title = title;
         this.shortText = shortText;
@@ -36,6 +38,7 @@ public class NewsPiece {
         this.authors = authors;
         this.tags = tags;
         this.comments = comments;
+
     }
     public NewsPiece(){
         this.authors = new HashSet<Author>();
@@ -47,6 +50,7 @@ public class NewsPiece {
         this.shortText = SHORT_TEXT;
         this.fullText = FULL_TEXT;
         this.title = TITLE;
+        this.commentCount = COMMENTS_COUNT;
     }
 
     public Long getNewsId() {
@@ -119,6 +123,13 @@ public class NewsPiece {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+    public Long getCommentCount() {
+        return commentCount;
+    }
+
+    public void setCommentCount(Long commentCount) {
+        this.commentCount = commentCount;
     }
 
     @Override

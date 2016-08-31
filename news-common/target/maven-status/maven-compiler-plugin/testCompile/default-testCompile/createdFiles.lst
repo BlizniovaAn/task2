@@ -1,0 +1,11 @@
+DBUnit\CommentDaoTest.class
+DBUnit\GeneralDaoTest.class
+DBUnit\TagDaoTest.class
+data_builder\DataBuilder.class
+Mockito\CommentServiceTest.class
+Mockito\TagServiceTest.class
+DBUnit\NewsPieceDaoTest.class
+DBUnit\AuthorDaoTest.class
+Mockito\AuthorServiceTest.class
+Mockito\NewsPieceServiceTest.class
+data_builder\Build.class

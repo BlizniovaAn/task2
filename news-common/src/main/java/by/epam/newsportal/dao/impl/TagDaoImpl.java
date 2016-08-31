@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -25,6 +26,7 @@ public class TagDaoImpl implements TagDao {
                                                   "WHERE news_tag.news_id=?";
     public static final String SELECT_TAG_BY_NAME = "SELECT * FROM tag WHERE tag_name=?";
     public static final String INSERT_TAG = "INSERT INTO tag(TAG_NAME) VALUES (?)";
+    public static final String SELECT_ALL = "SELECT tag_id,tag_name FROM tag";
     public TagDaoImpl(){}
     public TagDaoImpl(DataSource dataSource){
         this.dataSource = dataSource;
@@ -161,7 +163,33 @@ public class TagDaoImpl implements TagDao {
         return null;
     }
     public List<Tag> selectAll() throws DaoException {
-        return null;
+        List<Tag> tags = new ArrayList<Tag>();
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try{
+            connection = DataSourceUtils.getConnection(dataSource);
+            statement = connection.prepareStatement(SELECT_ALL);
+            ResultSet rs = statement.executeQuery();
+
+            while (rs.next()){
+                Tag tag = new Tag();
+                tag.setTagId(rs.getLong(TAG_ID));
+                tag.setName(rs.getString(TAG_NAME));
+                tags.add(tag);
+            }
+        } catch (SQLException e) {
+            throw new DaoException("TagDaoImpl Exception",e);
+        }finally {
+            try {
+                statement.close();
+                if (connection != null) {
+                    DataSourceUtils.releaseConnection(connection, dataSource);
+                }
+            } catch (SQLException e) {
+                throw new DaoException("TagDaoImpl Exception",e);
+            }
+        }
+        return tags;
     }
 
 }

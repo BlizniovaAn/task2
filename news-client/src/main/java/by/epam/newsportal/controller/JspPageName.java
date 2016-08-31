@@ -8,16 +8,17 @@ public final class JspPageName {
     public static final String TECHNICAL_ERROR_PAGE = "";
     public static final String NO_SUCH_PAGE = "";
     public static final String USER_GENERAL_PAGE = "pages/user_general_page.jsp";
+    public static final String CURRENT_NEWS = "/current-news.tiles";
     public static final String INDEX = "/index.tiles";
 
     public static String getPage(String page) {
         Pages currentPage = Pages.valueOf(page);
         switch (currentPage){
-            case USER_GENERAL_PAGE:{
-                return JspPageName.USER_GENERAL_PAGE;
-            }
             case INDEX:{
                 return JspPageName.INDEX;
+            }
+            case CURRENT_NEWS:{
+                return JspPageName.CURRENT_NEWS;
             }
             default:{
                 return JspPageName.NO_SUCH_PAGE;
@@ -26,5 +27,5 @@ public final class JspPageName {
     }
 }
 enum Pages{
-    USER_GENERAL_PAGE, INDEX
+     INDEX, CURRENT_NEWS
 }
