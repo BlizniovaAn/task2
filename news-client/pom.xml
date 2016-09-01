@@ -72,8 +72,6 @@
             <version>${jstl}</version>
         </dependency>
 
-
-
         <dependency>
             <groupId>by.epam.newsportal</groupId>
             <artifactId>news-common</artifactId>
