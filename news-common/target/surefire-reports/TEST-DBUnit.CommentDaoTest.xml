@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="DBUnit.CommentDaoTest" time="0.589" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="DBUnit.CommentDaoTest" time="2.063" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher tomcat7:deploy"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher tomcat7:redeploy"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,13 +63,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteComment" time="0.067"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteCommentsExpNullPointerException" time="0.05"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteCommentExpDaoException" time="0.05"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testAddCommentsToNews" time="0.12"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testGetNewsCommentsExpNull" time="0.102"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteComments" time="0.05"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testAddCommentsToNewsExpNullPointerException" time="0.05"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testGetNewsComments" time="0.04"/>
-  <testcase classname="DBUnit.CommentDaoTest" name="testGetNewsCommentsExpNullPointerException" time="0.06"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteComment" time="0.31"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteCommentsExpNullPointerException" time="0.122"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteCommentExpDaoException" time="0.122"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testAddCommentsToNews" time="0.192"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testGetNewsCommentsExpNull" time="0.174"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testDeleteComments" time="0.512"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testAddCommentsToNewsExpNullPointerException" time="0.15"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testGetNewsComments" time="0.199"/>
+  <testcase classname="DBUnit.CommentDaoTest" name="testGetNewsCommentsExpNullPointerException" time="0.282"/>
 </testsuite>

@@ -1,13 +1,14 @@
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\CommandName.java
+C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\impl\GoToCurrentNews.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\PageHelper.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\impl\FilterNews.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\controller\JspPageName.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\impl\GoToMainPage.java
-C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\de.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\impl\GoTo.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\impl\Localization.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\CommandHelper.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\utils\PaginationManager.java
+C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\test1.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\controller\Controller.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\command\Command.java
 C:\Users\Hanna_Blizniova\task2\news-client\src\main\java\by\epam\newsportal\controller\RequestParameterName.java

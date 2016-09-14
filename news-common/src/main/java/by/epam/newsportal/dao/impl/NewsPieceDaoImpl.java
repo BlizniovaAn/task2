@@ -95,7 +95,13 @@ public class NewsPieceDaoImpl implements NewsPieceDao{
                 statement.setLong(2,tag.getTagId());
                 ResultSet rs = statement.executeQuery();
                 if(rs.next()){
-                    NewsPiece newsPiece = createNewsPiece(rs);
+                    NewsPiece newsPiece = new NewsPiece();
+                    newsPiece.setNewsId(rs.getLong(NEWS_ID));
+                    newsPiece.setTitle(rs.getString(TITLE));
+                    newsPiece.setShortText(rs.getString(SHORT_TEXT));
+                    newsPiece.setFullText(rs.getString(FULL_TEXT));
+                    newsPiece.setCreationDate(rs.getDate(CREATION_DATE));
+                    newsPiece.setModificationDate(rs.getDate(MODIFICATION_DATE));
                     news.add(newsPiece);
                 }
             }
@@ -161,7 +167,13 @@ public class NewsPieceDaoImpl implements NewsPieceDao{
                 statement.setLong(1,tag.getTagId());
                 ResultSet rs = statement.executeQuery();
                 if(rs.next()){
-                    NewsPiece newsPiece = createNewsPiece(rs);
+                    NewsPiece newsPiece = new NewsPiece();
+                    newsPiece.setNewsId(rs.getLong(NEWS_ID));
+                    newsPiece.setTitle(rs.getString(TITLE));
+                    newsPiece.setShortText(rs.getString(SHORT_TEXT));
+                    newsPiece.setFullText(rs.getString(FULL_TEXT));
+                    newsPiece.setCreationDate(rs.getDate(CREATION_DATE));
+                    newsPiece.setModificationDate(rs.getDate(MODIFICATION_DATE));
                     news.add(newsPiece);
                 }
             }

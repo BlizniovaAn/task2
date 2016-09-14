@@ -2,9 +2,10 @@ by\epam\newsportal\controller\JspPageName$1.class
 by\epam\newsportal\command\Command.class
 by\epam\newsportal\command\impl\GoToMainPage.class
 by\epam\newsportal\command\CommandHelper.class
-by\epam\newsportal\de.class
 by\epam\newsportal\command\impl\FilterNews.class
 by\epam\newsportal\command\CommandName.class
+by\epam\newsportal\test1.class
+by\epam\newsportal\command\impl\GoToCurrentNews.class
 by\epam\newsportal\utils\PaginationManager.class
 by\epam\newsportal\command\CommandException.class
 by\epam\newsportal\controller\Pages.class

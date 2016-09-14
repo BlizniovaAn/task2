@@ -13,5 +13,11 @@
         <put-attribute name="pagination" value=""/>
         <put-attribute name="left-menu" value=""/>
     </definition>
+    <definition name="admin-news" extends="common">
+        <put-attribute name="header" value="/WEB-INF/templates/header/header-logout.jsp" />
+        <put-attribute name="body" value="/WEB-INF/templates/body/admin-news-body.jsp" />
+        <put-attribute name="pagination" value="/WEB-INF/templates/pagination-block.jsp"/>
+        <put-attribute name="left-menu" value="/WEB-INF/templates/menu/left-menu.jsp"/>
+    </definition>
 
 </tiles-definitions>

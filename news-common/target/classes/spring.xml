@@ -57,8 +57,6 @@
     <bean id="userService" class="by.epam.newsportal.service.impl.UserServiceImpl">
         <constructor-arg name="userDao" ref="userDao"/>
     </bean>
-    <bean id="roleService" class="by.epam.newsportal.service.impl.RoleServiceImpl">
-    </bean>
     <bean id="authorService" class="by.epam.newsportal.service.impl.AuthorServiceImpl">
         <constructor-arg name="authorDao" ref="authorDao"/>
     </bean>

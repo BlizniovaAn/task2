@@ -16,9 +16,9 @@ public class User {
     private String name;
     private String login;
     private String password;
-    private Role role;
+    private UserRole role;
 
-    public User(Long userId, String name, String login, String password,Role role) {
+    public User(Long userId, String name, String login, String password,UserRole role) {
         this.userId = userId;
         this.name = name;
         this.login = login;
@@ -30,7 +30,7 @@ public class User {
         this.userId = USER_ID;
         this.login = LOGIN;
         this.password = PASSWORD;
-        this.role = new Role();
+        this.role = UserRole.USER;
     }
 
     public String getPassword() {
@@ -65,11 +65,11 @@ public class User {
         this.login = login;
     }
 
-    public Role getRole() {
+    public UserRole getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(UserRole role) {
         this.role = role;
     }
 

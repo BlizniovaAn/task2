@@ -7,10 +7,14 @@
 <fmt:setBundle basename="localization.admin-i18n" var="language"/>
 <fmt:message bundle="${language}" key="site-title" var="title" />
 
+
 <html>
 <head>
     <title>${title}</title>
-    <link href="${pageContext.request.contextPath}/styles/styles.css" rel="stylesheet" />
+    <style>
+        <%@include file="/resources/styles/styles.css"%>
+    </style>
+
 </head>
 <body>
 <tiles:insertAttribute name="header" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="Mockito.NewsPieceServiceTest" time="0.089" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="Mockito.NewsPieceServiceTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher tomcat7:deploy"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher tomcat7:redeploy"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,14 +63,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Mockito.NewsPieceServiceTest" name="testEditNews" time="0.023"/>
-  <testcase classname="Mockito.NewsPieceServiceTest" name="testAddNews" time="0.043"/>
+  <testcase classname="Mockito.NewsPieceServiceTest" name="testEditNews" time="0"/>
+  <testcase classname="Mockito.NewsPieceServiceTest" name="testAddNews" time="0"/>
   <testcase classname="Mockito.NewsPieceServiceTest" name="testDeleteNonexistentObject" time="0"/>
   <testcase classname="Mockito.NewsPieceServiceTest" name="testEditNonexistentNews" time="0"/>
   <testcase classname="Mockito.NewsPieceServiceTest" name="testExistsAuthors" time="0"/>
   <testcase classname="Mockito.NewsPieceServiceTest" name="testDeleteExpNull" time="0"/>
-  <testcase classname="Mockito.NewsPieceServiceTest" name="testDelete" time="0.011"/>
+  <testcase classname="Mockito.NewsPieceServiceTest" name="testDelete" time="0"/>
   <testcase classname="Mockito.NewsPieceServiceTest" name="testGetNewsCount" time="0"/>
-  <testcase classname="Mockito.NewsPieceServiceTest" name="testSearchExpNullPointerException" time="0.001"/>
-  <testcase classname="Mockito.NewsPieceServiceTest" name="testSearch" time="0.011"/>
+  <testcase classname="Mockito.NewsPieceServiceTest" name="testSearchExpNullPointerException" time="0"/>
+  <testcase classname="Mockito.NewsPieceServiceTest" name="testSearch" time="0"/>
 </testsuite>

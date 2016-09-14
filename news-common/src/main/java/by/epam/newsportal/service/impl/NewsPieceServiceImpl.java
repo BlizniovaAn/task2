@@ -8,6 +8,8 @@ import by.epam.newsportal.entity.Tag;
 import by.epam.newsportal.service.NewsPieceService;
 import by.epam.newsportal.service.ServiceException;
 import by.epam.newsportal.service.search_criteria.SearchCriteria;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,6 +17,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@Service
 @Transactional(rollbackFor = ServiceException.class, propagation = Propagation.REQUIRED)
 public class NewsPieceServiceImpl implements NewsPieceService {
     private CommentDao commentDao;
